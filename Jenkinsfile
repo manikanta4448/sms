@@ -8,7 +8,10 @@ pipeline{
             // }
         // }
         stage('checkout'){
-            checkout 'scm'
+            steps{
+                checkout 'scm'
+            }
+            
         }
         stage('build'){
             steps{
