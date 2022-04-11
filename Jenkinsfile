@@ -2,11 +2,6 @@ pipeline{
     agent any
 
     tools {
-         maven 'maven3.8.1'
-         jdk 'java'
-    }
-
-    stages{
        // stage('checkout'){
             // steps{
                 // checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github access', url: 'https://github.com/sreenivas449/java-hello-world-with-maven.git']]])
