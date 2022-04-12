@@ -19,7 +19,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                echo "build steps in develop branch"
+                echo "build steps in feature/sms-1235 branch"
                sh 'mvn package'
                sh 'mvn clean install'
             }
