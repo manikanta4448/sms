@@ -13,7 +13,7 @@ pipeline{
         // }
         stage('code from git'){
             steps{
-                git 'https://github.com/manikanta4448/sms.git'
+                git 'git@github.com:manikanta4448/sms.git'
             }
             
         }
