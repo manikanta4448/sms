@@ -3,7 +3,6 @@ pipeline{
     tools {
          maven 'maven3.8.1'
          jdk 'java'
-         git 'git'
     }
 
     stages{
