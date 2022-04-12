@@ -12,11 +12,18 @@ pipeline{
                 // checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github access', url: 'https://github.com/sreenivas449/java-hello-world-with-maven.git']]])
             // }
         // }
-        stage('checkout'){
-            steps{
-                checkout scm
+        // stage('checkout'){
+            // steps{
+                // checkout scm
+            // }
+            // 
+        // }
+
+        stage ('git'){
+            steps {
+                git 'https://github.com/manikanta4448/sms.git'
             }
-            
+
         }
         stage('build'){
             steps{
