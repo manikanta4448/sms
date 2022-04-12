@@ -1,5 +1,5 @@
 pipeline{
-    agent 'java-runtime'
+    agent any
 
     tools {
          maven 'maven3.8.1'
