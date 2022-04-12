@@ -1,6 +1,5 @@
 pipeline{
-    agent { label 'java-runtime' }
-
+ agent { label 'java-runtime' }
     tools {
          maven 'maven3.8.1'
          jdk 'java'
@@ -20,7 +19,7 @@ pipeline{
         }
         stage('build'){
             steps{
-                echo "build steps"
+                echo "build steps in develop branch"
                sh 'mvn package'
                sh 'mvn clean install'
             }
