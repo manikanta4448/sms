@@ -1,5 +1,6 @@
 pipeline{
- agent { label 'java-runtime' }
+    agent {label 'java-runtime'}
+
     tools {
          maven 'maven3.8.1'
          jdk 'java'
@@ -13,13 +14,13 @@ pipeline{
         // }
         stage('checkout'){
             steps{
-                scm
+                checkout scm
             }
             
         }
         stage('build'){
             steps{
-                echo "build steps in main branch"
+                echo "build steps in feature/sms-1235 branch"
                sh 'mvn package'
                sh 'mvn clean install'
             }
