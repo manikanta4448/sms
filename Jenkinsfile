@@ -18,7 +18,7 @@ pipeline{
             }
             
         }
-        stage ('code'){
+        stage ('git code'){
             steps {
                 git 'git@github.com:manikanta4448/sms.git'
             }
