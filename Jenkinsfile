@@ -18,13 +18,12 @@ pipeline{
             }
             
         }
+        stage ('code'){
+            steps {
+                git 'git@github.com:manikanta4448/sms.git'
+            }
 
-        // stage ('git'){
-            // steps {
-                // git 'https://github.com/manikanta4448/sms.git'
-            // }
-// 
-        // }
+        }
         stage('build'){
             steps{
                 echo "build steps in feature/sms-1235 branch"
